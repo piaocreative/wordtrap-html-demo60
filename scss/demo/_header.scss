@@ -1,0 +1,266 @@
+
+/* ----------------------------------------------------------------
+
+	header.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Header
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for header. Thanks!
+-----------------------------------------------------------------*/
+
+
+#header {
+	position: relative;	
+
+	// Transparent header
+	&.transparent-header {
+		background-color: white;
+		
+		@include media-breakpoint-up(xl) {
+			background: transparent;
+			z-index: 199;
+		}	
+	}
+
+	.has-search {
+		position: relative;
+		border-radius: 4px;
+		border: 1px solid #eaeaea;
+		
+		&:focus {
+			box-shadow: 0 0 0 1px #35b056;
+		}
+	}
+
+	.has-search .form-control-feedback {
+			position: absolute;
+			z-index: 2;
+			display: block;
+			width: 3.375rem;
+			height: 4rem;
+			line-height: 4rem;
+			text-align: center;
+			pointer-events: none;
+			color: #aaa;
+	}
+
+	.form-control {
+    padding-left: 3rem !important;
+		display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 2rem 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+		&:focus {
+			box-shadow: none;
+		}
+
+		&::placeholder {
+			opacity: 0.5;
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Sticky Header
+-----------------------------------------------------------------*/
+
+#header-wrap {
+	@include media-breakpoint-down(xl) {
+		padding-left: 2rem;	
+		padding-right: 2rem;	
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Logo
+-----------------------------------------------------------------*/
+
+.navbar-brand {
+	margin-right: 3.5rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+
+	@include media-breakpoint-up(xl) {
+		margin-right: 4.625rem;
+	}
+
+	img {
+		width: 6.5625rem;
+		height: auto;
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Primary Menu
+-----------------------------------------------------------------*/
+
+#primary-menu {
+	.nav-link {
+		color: $primary-menu-font-color;
+		font-family: $primary-menu-font;
+		font-size: $primary-menu-font-size;
+		font-weight: $primary-menu-font-weight;		
+		letter-spacing: $primary-menu-font-spacing;
+		text-transform: $primary-menu-font-tt;
+		padding: 0;
+		margin: 1rem 0;
+
+		@include media-breakpoint-up(xl) {
+			line-height: 1;
+			margin: $primary-menu-padding 0;
+		}
+	}
+
+	.nav-item {
+		&.current,
+		&:hover {
+			a {
+				color: $theme-color;
+			}
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Mega Menu
+-----------------------------------------------------------------*/
+
+// Please ignore mega menu now 
+
+
+/* ----------------------------------------------------------------
+	Top Buttons
+-----------------------------------------------------------------*/
+
+
+#top-btns {
+	display: flex;
+
+	@include media-breakpoint-down(sm) {
+			margin-left: 0rem;
+	}
+
+	.nav-item {
+		margin-right: 1rem;
+
+		@include media-breakpoint-up(xl) {
+			margin-right: 1.6rem;
+		}
+	}
+
+	.nav-link {
+		color: $top-btn-font-color;		
+		font-size: $top-btn-font-size;	
+		line-height: 1;
+		width: 2.875rem;
+		height: 2.875rem;
+		line-height: 2.74rem;
+		text-align: center;
+		background-color: $theme-color;
+		border-radius: 50%;
+		border: none;
+
+		@include media-breakpoint-up(xl) {
+			padding: 0 0.9375rem;
+		}
+
+		&:hover {
+			color: $primary;
+			background-color: white;
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Links
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Top Infos
+-----------------------------------------------------------------*/
+
+#top-infos {
+	display: flex;
+	@include media-breakpoint-down(sm) {
+		display: block;
+
+		li {
+			margin-bottom: 1.5rem;
+		}
+	}
+	
+	@include media-breakpoint-up(xl) {
+		margin-left: 7rem; 
+	}
+
+	li {
+		margin-right: 4.6875rem;
+		
+		
+		a {
+			color: $theme-color;
+			font-weight: 500;
+			font-family: $body-font;
+			font-size: 1rem;
+			line-height: 1.8;
+		}
+	}
+}
+
+
+/* ----------------------------------------------------------------
+	Top Social
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Top Login
+-----------------------------------------------------------------*/
+
+
+
+/* ----------------------------------------------------------------
+	Top Search
+-----------------------------------------------------------------*/
+
+
+
+
+/* ----------------------------------------------------------------
+	Top Cart
+-----------------------------------------------------------------*/
+
+
+
+
+/* ----------------------------------------------------------------
+	Top Account
+-----------------------------------------------------------------*/
+
+
+
+
+
+

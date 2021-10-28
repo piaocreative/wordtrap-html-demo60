@@ -1,0 +1,30 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Shortcodes: team.scss
+
+-----------------------------------------------------------------------------------*/
+
+.team {
+	position: relative;
+	margin-bottom: 1.375rem;
+
+	.team-name {
+		margin-top: 1.5rem;
+		font-size: 1.56rem;
+		line-height: 1;
+		margin-bottom: 1.25rem;
+		font-weight: 600;
+		columns: $heading-color;
+		font-family: $heading-font;
+	}
+
+	.team-detail {
+		font-size: $h6-font-size;
+		color: $heading-color;
+		font-family: $heading-font;
+		line-height: 1.5;
+		margin-bottom: 1.25rem;
+		font-weight: 400;
+	}
+}

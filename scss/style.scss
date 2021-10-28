@@ -1,0 +1,65 @@
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: Saler
+    Theme URI: 
+    Description: The Multi-Purpose Ecommerce Template
+    Author: John Piao
+    Author URI: 
+    Version: 1.0
+
+    SASS Stylesheet
+
+-----------------------------------------------------------------------------------*/
+
+// Initialize
+@import "mixins";
+@import "variables";
+
+
+// Bootstrap
+@import "scss/bootstrap/bootstrap";
+
+
+#Demo60 {
+    // Core CSS
+    @import "demo/typography";
+
+
+    // Content Blocks
+    @import "demo/header";
+    @import "demo/banner";
+    @import "demo/blog";
+    @import "demo/shop";
+    @import "demo/sliders";
+
+
+    // Footer
+    @import "demo/footer";
+
+
+    // Page Title
+    @import "demo/pagetitle";
+
+
+    // Form
+    @import "demo/form";
+
+
+    // Widgets
+    @import "demo/widgets";
+
+
+    // Utilities
+    @import "demo/utilities";
+
+
+    // Shortcodes
+    @import "demo/shortcodes/headings";
+    @import "demo/shortcodes/logos";
+    @import "demo/shortcodes/icon-box";
+    @import "demo/shortcodes/team";
+
+
+    // Extras
+    @import "demo/extras";
+}

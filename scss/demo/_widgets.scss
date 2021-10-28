@@ -1,0 +1,92 @@
+
+/* ----------------------------------------------------------------
+
+	widgets.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Widgets
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for widgets. Thanks!
+-----------------------------------------------------------------*/
+
+
+.widget {
+
+	.widget-title {
+		font-size: 1.125rem;
+		font-family: $heading-font;
+		font-weight: 700;
+		margin-bottom: 2rem;
+		color: white;
+		text-transform: uppercase;
+	}
+
+	// Widget - Social
+	&.widget-social {
+		.social-icons {
+			li {
+				padding: 0 1rem;
+
+				&:first-child {
+					padding-left: 0;
+				}
+		
+				a {
+					color: white;
+					display: inline-block;
+					line-height: 1.8125rem;
+					vertical-align: middle;
+					text-align: center;
+					transition: all 0.3s ease-in-out;
+		
+					&:hover {
+						color: $theme-color;
+					}
+		
+					i {
+						vertical-align: top;
+						line-height: 1.8125rem;
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Links
+	&.widget-links {
+		ul {
+			li {
+				margin-bottom: 1.5rem;
+				a {
+					color: white;
+					font-weight: 300;
+					font-size: 1rem;
+					transition: all 0.3s ease-in-out;
+					line-height: 1;
+				}
+			}
+		}
+	}
+
+	// Widget - Payments
+	&.widget-payment {
+		.payments {
+			display: flex;
+
+			.payment-icon {
+				text-align: center;
+				margin-left: $spacer * 1.25;
+				
+				img {
+					width: 3rem;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,71 @@
+.form-floating {
+  position: relative;
+
+  > .form-control,
+  > .form-select {
+    height: $form-floating-height;
+    padding: $form-floating-padding-y $form-floating-padding-x;
+  }
+
+  > label {
+    &:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1rem;
+      background-color: white;
+      z-index: -1;
+    }
+
+    position: absolute;
+    top: -1rem;
+    background-color: transparent;
+    left: 0.5rem;
+    padding: $form-floating-padding-y $form-floating-padding-x;
+    pointer-events: none;
+    border: $input-border-width solid transparent; // Required for aligning label's text with the input as it affects inner box model
+    transform-origin: 0 0;
+    @include transition($form-floating-transition);
+    z-index: 9999;
+  }
+
+  // stylelint-disable no-duplicate-selectors
+  > .form-control {
+    &::placeholder {
+      color: transparent;
+    }
+
+    &:focus,
+    &:not(:placeholder-shown) {
+      padding-top: $form-floating-input-padding-t;
+      padding-bottom: $form-floating-input-padding-b;
+    }
+    // Duplicated because `:-webkit-autofill` invalidates other selectors when grouped
+    &:-webkit-autofill {
+      padding-top: $form-floating-input-padding-t;
+      padding-bottom: $form-floating-input-padding-b;
+    }
+  }
+
+  > .form-select {
+    padding-top: $form-floating-input-padding-t;
+    padding-bottom: $form-floating-input-padding-b;
+  }
+
+  > .form-control:focus,
+  > .form-control:not(:placeholder-shown),
+  > .form-select {
+    ~ label {
+      color: $primary;
+    }
+  }
+  // Duplicated because `:-webkit-autofill` invalidates other selectors when grouped
+  > .form-control:-webkit-autofill {
+    ~ label {
+      color: $primary;
+    }
+  }
+  // stylelint-enable no-duplicate-selectors
+}

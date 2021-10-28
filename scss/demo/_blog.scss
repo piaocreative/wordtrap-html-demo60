@@ -1,0 +1,84 @@
+
+/* ----------------------------------------------------------------
+
+	blog.scss
+
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Blog
+-----------------------------------------------------------------*/
+
+.post {
+	position: relative;
+	margin-bottom: 3.875rem;
+}
+
+.post-thumbnail {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: auto;
+
+	a {
+		display: block;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+}
+
+.post-content {
+	padding-top: 1.875rem;
+	padding-bottom: 4rem;
+}
+
+.entry-meta {
+	list-style: none;
+	margin-bottom: 0.75rem;
+	line-height: 1;
+
+	a {
+		font-size: $h6-font-size;
+		font-weight: 500;
+		color: $heading-color;
+		opacity: 0.4;
+		font-family: $body-font;
+		line-height: 1;
+	}
+}
+
+.entry-content { 
+	position: relative; 
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+	color: $heading-color;
+	font-weight: 600;
+	font-size: 1.25rem;
+	line-height: 1.3;
+	font-family: $heading-font;
+}
+
+.entry-link {
+	background-color: $theme-color;
+	width: 80%;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: $h6-font-size;
+	font-family: $heading-font;
+	padding: 1rem;
+	text-align: center;
+	color: white;
+	position: absolute;
+	bottom: 0;
+}
+
+#post {
+	.product {
+		margin-right: 2rem;
+	}
+}

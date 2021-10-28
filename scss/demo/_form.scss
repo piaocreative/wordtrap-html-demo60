@@ -1,0 +1,95 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Form: form.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Form Styles
+-----------------------------------------------------------------*/
+
+// Textarea
+textarea {
+    resize: none;
+}
+
+// Required field
+.required-field {
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        right: 1.375rem;
+        top: 0;
+        display: block;
+        width: 0.5rem;
+        height: 0.6875rem;
+        background-image: url(../images/clip-icon.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+
+.form-control {
+    border: 1px solid #eaeaea;
+    color: #000;
+}
+
+.has-icon {
+	.form-control {
+		padding-left: 2.375rem;
+
+		&::placeholder {
+			color: $heading-color;
+			opacity: 1;
+			font-weight: 600;
+			font-size: $h6-font-size;
+			font-family: $heading-font;
+		}
+	}
+
+	.form-control-icon {
+		position: absolute;
+		z-index: 2;
+		display: block;
+		width: 2.375rem;
+		height: 2.375rem;
+		line-height: 3rem;
+		text-align: center;
+		pointer-events: none;
+		color: $heading-color;
+	}
+	
+}
+
+.feedback {
+	padding-top: 3.5rem;
+	display: flex;
+	align-items: center;
+	
+	@include media-breakpoint-up(xl) {
+		padding-top: 7rem;
+	}
+
+	.form-control {
+		background-color: transparent;
+		font-family: $heading-font;
+		font-size: $h6-font-size;
+		font-weight: 600;
+		color: white;
+		border: 1px solid white;
+		text-transform: uppercase;
+
+		&::placeholder {
+			color: white;
+			text-transform: uppercase;
+			font-size: $h6-font-size;
+		}
+	}
+
+	.btn {
+		border: 3px solid white;
+	}
+}	
