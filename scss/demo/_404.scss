@@ -1,0 +1,21 @@
+.error-404 {
+	background-image: url(../images/404.png);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 5.875rem;
+	padding-bottom: 20.3rem;
+	margin-top: 4.4rem;
+
+	@include media-breakpoint-up(xl) {
+		padding-bottom: 41.75rem;
+	}	
+	
+	h1 {
+		margin-bottom: 21.68rem;
+
+		@include media-breakpoint-down(md) {
+			margin-bottom: 15rem;
+		}
+	}
+}

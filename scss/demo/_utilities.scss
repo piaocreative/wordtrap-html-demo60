@@ -16,7 +16,6 @@
 // Text Color
 .text-black { color: #000 !important; }
 .theme-color { color: $theme-color !important; }
-.third-color { color: $third-color !important; }
 .light { color: $light !important; }
 
 //Background Color
@@ -41,6 +40,12 @@ img {
 			object-position: right;
 		}
 	}
+}
+
+.bg-cover {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 

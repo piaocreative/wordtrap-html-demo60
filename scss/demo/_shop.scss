@@ -127,98 +127,54 @@
 		color: white;
 	}
 
-	&.product-on-image {
-		position: relative;
-		padding: 2.5rem;
-
-		.product-on-details {
-			@include media-breakpoint-up(xl) {
-				margin-left: 2rem;
-			}
-
-			.product-price {
-				font-size: 1.875rem;
-			}
-		}
-
-		ul {
-			li {
-				list-style: disc;
-			}
+	ul {
+		li {
+			list-style: disc;
 		}
 	}
-
-}
-
-[data-cart-items] {
-	position: relative;
-	display: inline-block;
-
-		&::before {
-			content: attr(data-cart-items);
-			position: absolute;
-			top: -.5rem;
-			right: -1rem;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			font-size: 1rem;
-			font-weight: 600;
-			font-family: $heading-font;
-			border-radius: 50%;
-			background-color: white;
-			color: $theme-color;
-			border: 1px solid $theme-color;
-			border-radius: 50%;
-			width: 1.5rem;
-			height: 1.5rem;
-			line-height: 1.5rem;
-			text-align: center;
-		}
 }
 
 .ads {
-	position: relative;
-	display: block;
+    position: relative;
+    display: block;
+	margin-bottom: 1.5rem;
 
-	.ads-body {
-		position: absolute;
-		left: 4rem;
-		top: 50%;
-		transform: translateY(-50%);
+    .ads-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
 
-		@include media-breakpoint-down(md) {
-			left: 2rem;
-		}
-	}
+        .ads-bg-img {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .ads-body {
+        position: relative;
+        z-index: 1;
+    }
 
 	&.ads1 {
-		position: relative;
-		height: 100%;
-
-		.top-center {
-			position: absolute;
-			top: 10%;
-			left: 50%;
-			transform: translateX(-50%);
+		.ads-body {
+			padding: 7rem 4.5rem;
 		}
+	}
 
+	&.ads2 {
+		.ads-body {
+			padding: 4.75rem;
+			padding-bottom: 20rem;
+		}
 	}
 }
-
-.ads-banner {
-	background-image: url(../images/ads/ads-banner.png);
-	background-position: left;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 31.5rem;
-	display: flex;
-	align-items: center;
-
-	@include media-breakpoint-down(md)
-	{
-		height: 20rem;
-	}
-}
-
 
